@@ -1,0 +1,80 @@
+// https://github.com/chriskempson/tomorrow-theme
+
+    // Tomorrow
+    highlight-background   = rgba(249, 249, 249, .5)
+    highlight-current-line = #efefef
+    highlight-selection    = #d6d6d6
+    highlight-foreground   = #4d4d4c
+    highlight-comment      = #8e908c
+    highlight-red          = #c82829
+    highlight-orange       = #f5871f
+    highlight-yellow       = #eab700
+    highlight-green        = #718c00
+    highlight-aqua         = #3e999f
+    highlight-blue         = #4271ae
+    highlight-purple       = #8959a8
+
+highlight_style = hexo-config("highlight_style.on")
+code_block = hexo-config("highlight_style.code_block")
+
+if highlight_style
+
+    // Tomorrow Night Eighties
+    if code_block == "1"
+        highlight-background   = rgba(0, 0, 1, 0.95)
+        highlight-current-line = #FFA5E12E
+        highlight-selection    = #FFA5E12E
+        highlight-foreground   = #FFB62470
+        highlight-comment      = #FF26498F
+        highlight-red          = #f2777a
+        highlight-orange       = #f99157
+        highlight-yellow       = #FFA5E12E
+        highlight-green        = #99cc99
+        highlight-aqua         = #66cccc
+        highlight-blue         = #6699cc
+        highlight-purple       = #cc99cc
+
+    // Tomorrow Night
+    if code_block == "2"
+        highlight-background   = rgba(32, 34, 37, .85)
+        highlight-current-line = #282a2e
+        highlight-selection    = #373b41
+        highlight-foreground   = #c5c8c6
+        highlight-comment      = #969896
+        highlight-red          = #cc6666
+        highlight-orange       = #de935f
+        highlight-yellow       = #f0c674
+        highlight-green        = #b5bd68
+        highlight-aqua         = #8abeb7
+        highlight-blue         = #81a2be
+        highlight-purple       = #b294bb
+
+    // Tomorrow Night Blue
+    if code_block == "3"
+        highlight-background   = rgba(0, 40, 91, .8)
+        highlight-current-line = #00346e
+        highlight-selection    = #003f8e
+        highlight-foreground   = #ffffff
+        highlight-comment      = #7285b7
+        highlight-red          = #ff9da4
+        highlight-orange       = #ffc58f
+        highlight-yellow       = #ffeead
+        highlight-green        = #d1f1a9
+        highlight-aqua         = #99ffff
+        highlight-blue         = #bbdaff
+        highlight-purple       = #ebbbff
+
+    // Tomorrow Night Bright  2da7cc
+    if code_block == "4"
+        highlight-background   = rgba(0, 0, 1, 0.9)
+        highlight-current-line = #2a2a2a
+        highlight-selection    = #e1be3b
+        highlight-foreground   = #63EA73
+        highlight-comment      = #ea210b
+        highlight-red          = #2da7cc
+        highlight-orange       = #e78c45
+        highlight-yellow       = #e7c547
+        highlight-green        = #E1CD1D
+        highlight-aqua         = #ffa500
+        highlight-blue         = #7aa6da
+        highlight-purple       = #c397d8
