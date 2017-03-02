@@ -122,6 +122,39 @@ $  git remote add origin git@github.com:yourname/XXX.git
 $  git push -u origin master
 ```
 
+### 今天提交遇见这种错误
+
+```
+$ git push -u origin master
+Counting objects: 159, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (150/150), done.
+Writing objects: 100% (159/159), 521.63 KiB | 0 bytes/s, done.
+Total 159 (delta 3), reused 0 (delta 0)
+packet_write_wait: Connection to 192.30.253.112 port 22: Broken pipe
+fatal: The remote end hung up unexpectedly
+fatal: The remote end hung up unexpectedly
+```
+
+### 可能是文件过大造成的解决办法 
+
+```
+$ git config http.postBuffer 524288000
+Administrator@2011-20151010QW MINGW64 /d/Git/Hexo1 (master)
+$ git push -u origin master
+Counting objects: 159, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (150/150), done.
+Writing objects: 100% (159/159), 521.63 KiB | 0 bytes/s, done.
+Total 159 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To github.com:gyymz1993/GitHubHexo.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+```
+
+
+
 ### 当你修改你的项目提交
 
 ```
